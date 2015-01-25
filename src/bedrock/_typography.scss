@@ -1,0 +1,39 @@
+html {
+  @include font-size($base-font-size);
+
+  @include bp-small {
+    @include font-size($base-font-size * 0.875);
+  }
+}
+
+p {
+  @include font-size($base-font-size);
+}
+
+span {
+  @include font-size($base-font-size * 0.875);
+}
+
+h1 {
+  @include font-size($heading-size-1);
+}
+
+h2 {
+  @include font-size($heading-size-2);
+}
+
+h3 {
+  @include font-size($heading-size-3);
+}
+
+h4 {
+  @include font-size($heading-size-4);
+}
+
+h5 {
+  @include font-size($heading-size-5);
+}
+
+h6 {
+  @include font-size($heading-size-6);
+}

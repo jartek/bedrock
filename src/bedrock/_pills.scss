@@ -1,0 +1,10 @@
+%pill {
+  @include font-size($pill-font-size);
+  display: inline;
+  padding: $pill-padding;
+  font-weight: bold;
+  color: $pill-color;
+  text-align: center;
+  border-radius: $pill-border-radius;
+  vertical-align: baseline;
+}

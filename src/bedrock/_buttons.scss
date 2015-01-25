@@ -1,0 +1,57 @@
+$btn-padding: em(6px) !default;
+$btn-color: $white !default;
+$btn-border-width: em(1px) !default;
+$btn-border-style: solid !default;
+$btn-border-radius: 0 !default;
+$btn-font-size: 14px !default;
+
+%btn {
+  @include font-size($btn-font-size);
+  display: inline-block;
+  vertical-align: middle;
+  padding: ($btn-padding - $btn-border-width) (($btn-padding * 2) - ($btn-border-width * 2));
+  border-radius: $btn-border-radius;
+  border-style: $btn-border-style;
+  border-width: $btn-border-width;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    color: $btn-color;
+  }
+}
+
+$btn-primary-background: $light-green !default;
+$btn-primary-background-hover: $dark-green !default;
+$btn-primary-border-color: $dark-green !default;
+
+.btn-primary {
+  @extend %btn;
+  background-color: $btn-primary-background;
+  border-color: $btn-primary-border-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $btn-primary-background-hover;
+  }
+}
+
+$btn-muted-background: $light-gray !default;
+$btn-muted-border-color: $dark-gray !default;
+$btn-muted-background-hover: $dark-gray !default;
+
+.btn-muted {
+  @extend %btn;
+  background-color: $btn-muted-background;
+  border-color: $btn-muted-border-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $btn-muted-background-hover;
+  }
+}

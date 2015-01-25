@@ -1,0 +1,94 @@
+$grid-columns: 12 !default;
+$grid-gutter: 1rem !default;
+
+body {
+  margin: 0;
+}
+
+%container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-fixed {
+  @extend %container;
+  max-width: $breakpoint-large;
+  padding: 0 $grid-gutter;
+}
+
+.container-fluid {
+  @extend %container;
+}
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 $grid-gutter * -1;
+}
+
+%column {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 1px;
+  padding: 0 $grid-gutter/2;
+
+  @include bp-xsmall {
+    padding: 0;
+  }
+}
+
+@mixin calculate-width($index, $grid-columns) {
+  flex: 0 0 percentage($index/$grid-columns);
+  max-width: percentage($index/$grid-columns);
+
+  @include bp-xsmall {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.column {
+  @extend %column;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+@for $i from 1 through $grid-columns {
+  .column.x#{$i} {
+    flex-grow: $i;
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .column-#{$i} {
+    @extend %column;
+    @include calculate-width($i, $grid-columns);
+  }
+
+  .offset-#{$i} {
+    margin-left: percentage($i/$grid-columns);
+  }
+}
+
+.top {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+}
+
+.bottom {
+  align-self: flex-end;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+[class*=column].reverse {
+  flex-direction: column-reverse;
+}

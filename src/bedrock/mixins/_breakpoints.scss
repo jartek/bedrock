@@ -1,0 +1,28 @@
+$breakpoint-large: 75em !default;
+$breakpoint-medium: 62em !default;
+$breakpoint-small: 48em !default;
+$breakpoint-xsmall: 30em !default;
+
+@mixin bp-large {
+  @media only screen and (min-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin bp-xsmall {
+  @media only screen and (max-width: $breakpoint-xsmall) {
+    @content;
+  }
+}
