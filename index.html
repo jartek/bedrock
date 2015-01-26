@@ -11,7 +11,7 @@
     }
 
     [class*=column] {
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     .content {
@@ -29,199 +29,211 @@
 <body>
   <div class="container-fixed">
 
-    <div id="grid">
-      Regular
-      <div class="row">
-        <div class="column-1">
-          <div class="content"></div>
+    <article id="grid">
+      <section id="grid-regular">
+        <h1>Regular</h1>
+        <div class="row">
+          <div class="column-1">
+            <div class="content"></div>
+          </div>
+          <div class="column-11">
+            <div class="content"></div>
+          </div>
         </div>
-        <div class="column-11">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column-2">
+            <div class="content"></div>
+          </div>
+          <div class="column-10">
+            <div class="content"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column-2">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column-3">
+            <div class="content"></div>
+          </div>
+          <div class="column-9">
+            <div class="content"></div>
+          </div>
         </div>
-        <div class="column-10">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column-4">
+            <div class="content"></div>
+          </div>
+          <div class="column-8">
+            <div class="content"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column-3">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column-5">
+            <div class="content"></div>
+          </div>
+          <div class="column-7">
+            <div class="content"></div>
+          </div>
         </div>
-        <div class="column-9">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column-6">
+            <div class="content"></div>
+          </div>
+          <div class="column-6">
+            <div class="content"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column-4">
-          <div class="content"></div>
-        </div>
-        <div class="column-8">
-          <div class="content"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-5">
-          <div class="content"></div>
-        </div>
-        <div class="column-7">
-          <div class="content"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-6">
-          <div class="content"></div>
-        </div>
-        <div class="column-6">
-          <div class="content"></div>
-        </div>
-      </div>
+      </section>
 
-      Auto Width
-      <div class="row">
-        <div class="column">
-          <div class="content"></div>
+      <section id="grid-auto">
+        <h1>Auto Width</h1>
+        <div class="row">
+          <div class="column">
+            <div class="content"></div>
+          </div>
+          <div class="column x3">
+            <div class="content"></div>
+          </div>
+          <div class="column">
+            <div class="content"></div>
+          </div>
         </div>
-        <div class="column x3">
-          <div class="content"></div>
+        <div class="row">
+          <div class="column">
+            <div class="content"></div>
+          </div>
+          <div class="column x3">
+            <div class="content"></div>
+          </div>
         </div>
-        <div class="column">
-          <div class="content"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="content"></div>
-        </div>
-        <div class="column x3">
-          <div class="content"></div>
-        </div>
-      </div>
+      </section>
 
-      Nested
-      <div class="row">
-        <div class="column-7">
-          <div class="content">
-            <div class="row">
-              <div class="column-10 no-margin">
-                <div class="content nested-content">
-                  <div class="row">
-                    <div class="column-4 no-margin">
-                      <div class="content"></div>
-                    </div>
-                    <div class="column-8 no-margin">
-                      <div class="content"></div>
+      <section id="grid-nested">
+        <h1>Nested</h1>
+        <div class="row">
+          <div class="column-7">
+            <div class="content">
+              <div class="row">
+                <div class="column-10 no-margin">
+                  <div class="content nested-content">
+                    <div class="row">
+                      <div class="column-4 no-margin">
+                        <div class="content"></div>
+                      </div>
+                      <div class="column-8 no-margin">
+                        <div class="content"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="column-2 no-margin">
-                <div class="content nested-content">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column-5">
-          <div class="content">
-            <div class="row">
-              <div class="column no-margin">
-                <div class="content nested-content">
-                  <div class="row">
-                    <div class="column no-margin">
-                      <div class="content"></div>
-                    </div>
-                    <div class="column no-margin">
-                      <div class="content"></div>
-                    </div>
+                <div class="column-2 no-margin">
+                  <div class="content nested-content">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      Offset
-      <div class="row">
-        <div class="column-6 offset-2">
-          <div class="content"></div>
-        </div>
-        <div class="column-3 offset-1">
-          <div class="content"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-3 offset-1">
-          <div class="content"></div>
-        </div>
-        <div class="column-2 offset-2">
-          <div class="content"></div>
-        </div>
-        <div class="column-1 offset-3">
-          <div class="content"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-8 offset-3">
-          <div class="content"></div>
-        </div>
-      </div>
-
-      Alignment
-      <div class="row">
-        <div class="column-3 top">
-          <div class="content">Top Aligned</div>
-        </div>
-
-        <div class="column-3">
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="column-5">
+            <div class="content">
+              <div class="row">
+                <div class="column no-margin">
+                  <div class="content nested-content">
+                    <div class="row">
+                      <div class="column no-margin">
+                        <div class="content"></div>
+                      </div>
+                      <div class="column no-margin">
+                        <div class="content"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="column-3 middle">
-          <div class="content">Center Aligned</div>
+      <section id="grid-offset">
+        <h1>Offset</h1>
+        <div class="row">
+          <div class="column-6 offset-2">
+            <div class="content"></div>
+          </div>
+          <div class="column-3 offset-1">
+            <div class="content"></div>
+          </div>
         </div>
+        <div class="row">
+          <div class="column-3 offset-1">
+            <div class="content"></div>
+          </div>
+          <div class="column-2 offset-2">
+            <div class="content"></div>
+          </div>
+          <div class="column-1 offset-3">
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-8 offset-3">
+            <div class="content"></div>
+          </div>
+        </div>
+      </section>
 
-        <div class="column-3 bottom">
-            <div class="content">Bottom Aligned</div>
-        </div>
-      </div>
+      <section id="grid-alignment">
+        <h1>Alignment</h1>
+        <div class="row">
+          <div class="column-3 top">
+            <div class="content">Top Aligned</div>
+          </div>
 
-       Reverse
-      <div class="row reverse">
-        <div class="column">
-          <div class="content">1</div>
-        </div>
-        <div class="column">
-          <div class="content">2</div>
-        </div>
-        <div class="column">
-          <div class="content">3</div>
-        </div>
-        <div class="column">
-          <div class="content">4</div>
-        </div>
-        <div class="column">
-          <div class="content">5</div>
-        </div>
-        <div class="column">
-          <div class="content">6</div>
-        </div>
-      </div>
-    </div>
+          <div class="column-3">
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
 
-    <div id="typography">
-      <div id="headings">
+          <div class="column-3 middle">
+            <div class="content">Center Aligned</div>
+          </div>
+
+          <div class="column-3 bottom">
+              <div class="content">Bottom Aligned</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="grid-reverse">
+        <h1>Reverse</h1>
+        <div class="row reverse">
+          <div class="column">
+            <div class="content">1</div>
+          </div>
+          <div class="column">
+            <div class="content">2</div>
+          </div>
+          <div class="column">
+            <div class="content">3</div>
+          </div>
+          <div class="column">
+            <div class="content">4</div>
+          </div>
+          <div class="column">
+            <div class="content">5</div>
+          </div>
+          <div class="column">
+            <div class="content">6</div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article id="typography">
+      <section id="headings">
         <h1>Headings</h1>
         <h1>h1. Heading</h1>
         <h2>h2. Heading</h2>
@@ -229,8 +241,8 @@
         <h4>h4. Heading</h4>
         <h5>h5. Heading</h5>
         <h6>h6. Heading</h6>
-      </div>
-      <div id="paragraphs">
+      </section>
+      <section id="paragraphs">
         <h1>Primary Text</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -244,8 +256,8 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div id="spans">
+      </section>
+      <section id="spans">
         <h1>Secondary Text</h1>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -253,8 +265,8 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-      </div>
-      <div id="lists">
+      </section>
+      <section id="lists">
         <h1>Lists</h1>
         <h4>Unordered</h4>
         <ul>
@@ -268,10 +280,10 @@
           <li>Item 2</li>
           <li>Item 3</li>
         </ol>
-      </div>
-      <div id="misc">
+      </section>
+      <section id="misc">
         <h1>Misc</h1>
-        <div id="blockquotes">
+        <section id="blockquotes">
           <h4>Block Quotes</h4>
 
           <blockquote>
@@ -283,14 +295,14 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <cite>Someone</cite>
           </blockquote>
-        </div>
-        <div id="subnsuper">
+        </section>
+        <section id="subnsuper">
           <h4>Abbreviations, Subscripts and superscripts</h4>
           <p>Lorem ipsum <abbr>dolor</abbr> sit amet, consectetur <sub>adipisicing</sub> elit, sed do eiusmod
             tempor <sup>incididunt</sup> ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </article>
   </div>
 </body>
 </html>
