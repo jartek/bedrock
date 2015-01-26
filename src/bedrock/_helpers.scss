@@ -13,3 +13,31 @@
 .no-margin {
   margin: 0;
 }
+
+%t-uppercase {
+  text-transform: uppercase;
+}
+
+%t-lowercase {
+  text-transform: lowercase;
+}
+
+%t-capitalize {
+  text-transform: capitalize;
+}
+
+%t-align-center {
+  text-align: center;
+}
+
+%t-align-left {
+  text-align: left;
+}
+
+%t-align-right {
+  text-align: right;
+}
+
+%t-align-justify {
+  text-align: justify;
+}
