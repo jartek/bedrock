@@ -57,15 +57,13 @@ body {
 }
 
 @for $i from 1 through $grid-columns {
-  .column.x#{$i} {
-    flex-grow: $i;
-  }
-}
-
-@for $i from 1 through $grid-columns {
   .column-#{$i} {
     @extend %column;
     @include calculate-width($i, $grid-columns);
+  }
+
+  .column.x#{$i} {
+    flex-grow: $i;
   }
 
   .offset-#{$i} {
@@ -91,4 +89,10 @@ body {
 
 [class*=column].reverse {
   flex-direction: column-reverse;
+}
+
+[class*=offset] {
+  @include bp-small {
+    margin-left: 0;
+  }
 }

@@ -1,7 +1,10 @@
 $white: #FFF;
 
-$light-gray: #F9F9F9;
-$dark-gray: #9F9F9F;
+$lighter-grey: #F5F5F5;
+$light-grey: #E0E0E0;
+$medium-grey: #9E9E9E;
+$dark-grey: #616161;
+$darker-grey: #616161;
 
 $light-green: #AAD780;
 $dark-green: #7A973C;
@@ -13,8 +16,11 @@ $orange: #DFB100;
 $purple: #A593E4;
 
 $base-font-size: 16px !default;
+$secondary-font-size: $base-font-size * 0.875 !default;
+$tertiary-font-size: $base-font-size * 0.75 !default;
 $base-line-height: 24px !default;
 
+$heading-line-height:  1.25 !default;
 $heading-size-1:  36px !default;
 $heading-size-2:  30px !default;
 $heading-size-3:  24px !default;

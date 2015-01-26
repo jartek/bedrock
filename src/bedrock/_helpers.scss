@@ -1,4 +1,4 @@
-%clearfix {
+.clearfix {
   *zoom: 1;
   &:before,
   &:after {
@@ -8,4 +8,8 @@
   &:after {
     clear: both;
   }
+}
+
+.no-margin {
+  margin: 0;
 }

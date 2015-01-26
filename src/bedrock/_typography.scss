@@ -1,39 +1,74 @@
 html {
   @include font-size($base-font-size);
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include bp-small {
-    @include font-size($base-font-size * 0.875);
+    @include font-size($secondary-font-size);
   }
 }
 
 p {
   @include font-size($base-font-size);
+  margin: 0 0 em($secondary-font-size);
 }
 
 span {
-  @include font-size($base-font-size * 0.875);
+  @include font-size($secondary-font-size);
+}
+
+%heading {
+  font-weight: 500;
+  margin: em(2px) 0 em(4px);
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
-  @include font-size($heading-size-1);
+  @include font-size($heading-size-1, $heading-line-height);
+  @extend %heading;
 }
 
 h2 {
-  @include font-size($heading-size-2);
+  @include font-size($heading-size-2, $heading-line-height);
+  @extend %heading;
 }
 
 h3 {
-  @include font-size($heading-size-3);
+  @include font-size($heading-size-3, $heading-line-height);
+  @extend %heading;
 }
 
 h4 {
-  @include font-size($heading-size-4);
+  @include font-size($heading-size-4, $heading-line-height);
+  @extend %heading;
 }
 
 h5 {
-  @include font-size($heading-size-5);
+  @include font-size($heading-size-5, $heading-line-height);
+  @extend %heading;
 }
 
 h6 {
-  @include font-size($heading-size-6);
+  @include font-size($heading-size-6, $heading-line-height);
+  @extend %heading;
+}
+
+blockquote {
+  margin: em(10px) 0;
+  padding-left: em(13px);
+  border-left: 3px solid $light-grey;
+  color: $dark-grey;
+}
+
+cite {
+  &:before {
+    content: "\2014 \00A0";
+  }
+}
+
+sup, sub {
+  @include font-size($tertiary-font-size);
+}
+
+abbr {
+  border-bottom: 1px dotted;
+  cursor: pointer;
 }

@@ -40,9 +40,9 @@ $btn-primary-border-color: $dark-green !default;
   }
 }
 
-$btn-muted-background: $light-gray !default;
-$btn-muted-border-color: $dark-gray !default;
-$btn-muted-background-hover: $dark-gray !default;
+$btn-muted-background: $light-grey !default;
+$btn-muted-border-color: $dark-grey !default;
+$btn-muted-background-hover: $dark-grey !default;
 
 .btn-muted {
   @extend %btn;
