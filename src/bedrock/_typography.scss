@@ -1,6 +1,6 @@
 html {
   @include font-size($base-font-size);
-
+  font-family: Helvetica, sans-serif;
   @include bp-small {
     @include font-size($base-font-size * 0.875);
   }
